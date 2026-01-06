@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">NETFLIX</div>
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input id="search" type="text" placeholder="Search movies..." />
+    </div>
+  </header>
+
+  <div class="hero">
+    <img id="heroImage" src="" alt="Hero Image" />
+    <div class="hero-overlay"></div>
+    <div class="text">
+      <h1 id="heroTitle"></h1>
+      <p id="heroDesc"></p>
+      <button class="play-btn" onclick="openModal(movies[0])">
+        <i class="fas fa-play"></i> Play
+      </button>
+    </div>
+  </div>
+
+  <!-- POPULAR MOVIES -->
+  <section class="movies">
+    <h2>Popular on Netflix</h2>
+    <div id="movieGrid" class="grid"></div>
+  </section>
+
+  <!--  TRENDING MOVIES (ADDED) -->
+  <section class="movies">
+    <h2>Trending Now</h2>
+    <div id="trendingGrid" class="grid"></div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">
+        <i class="fas fa-times"></i>
+      </div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Netflix Clone</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
