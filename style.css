@@ -223,7 +223,7 @@ footer {
 .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;    /* 🔥 KEY FIX */
+  object-fit: cover;    /*  KEY FIX */
   border-radius: 8px;
 }
 
